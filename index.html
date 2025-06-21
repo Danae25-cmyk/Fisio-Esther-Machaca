@@ -1,0 +1,241 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esther Machaca-Fisioterapia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f9ff;
+      color: #333;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .slider-container {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+
+    .slider {
+      display: flex;
+      width: 400%;
+      height: 100vh;
+      transition: transform 1s ease-in-out;
+    }
+
+    .slider img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 82, 155, 0.7);
+      padding: 40px;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+      animation: fadeInUp 1.5s ease-in-out;
+      z-index: 1;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+
+    .cta-button {
+      background: #007bff;
+      color: white;
+      padding: 15px 35px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .cta-button:hover {
+      background: #005bb5;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    #descripcion {
+      background-color: #ffffff;
+    }
+
+    #descripcion h2 {
+      font-size: 2.5rem;
+      color: #005bb5;
+      margin-bottom: 20px;
+    }
+
+    #descripcion p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    #servicios {
+      background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+    }
+
+    .servicios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .servicio {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .servicio:hover {
+      transform: translateY(-8px);
+    }
+
+    .servicio h3 {
+      color: #1E88E5;
+      margin-bottom: 10px;
+    }
+
+    .redes {
+      margin-top: 60px;
+    }
+
+    .redes a {
+      margin: 0 12px;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    .redes a:hover {
+      transform: scale(1.2);
+    }
+
+    .redes img {
+      width: 35px;
+      filter: grayscale(100%) brightness(1.3);
+    }
+
+    @media (max-width: 768px) {
+      .hero-text h1 { font-size: 2rem; }
+      .hero-text p { font-size: 1rem; }
+      .cta-button { padding: 12px 25px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="slider-container">
+      <div class="slider" id="slider">
+        <img src="https://chronicfisioterapia.com/wp-content/uploads/2023/02/fisioterapia-traumatologica_2-e1676193365519.jpeg" alt="slide1">
+        <img src="https://backbone.care/cdn/shop/articles/fisioterapia_large.jpg?v=1662575029" alt="slide2">
+        <img src="https://centrosanitario.es/wp-content/uploads/2023/11/photo_2023-11-12_17-14-26.jpg" alt="slide3">
+        <img src="https://terapiascanadienses.com/wp-content/uploads/2023/02/considered-a-doctor.jpg" alt="slide4">
+      </div>
+      <div class="hero-text">
+        <h1>Recupera tu movimiento, vive mejor</h1>
+        <p>Especialistas en fisioterapia personalizada y tratamientos de rehabilitación.</p>
+        <a href="file:///C:/Users/Danae/Desktop/MATERIAS%20UNIFRANZ%202/5TO%20SEMESTRE/PLATAFORMAS%20WEB/HITO%205/index.html.html" class="cta-button">Ir a Esther Machaca</a><br>
+        <a href="ServicioM.html" class="cta-button">Ver Servicios</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="descripcion">
+    <h2>Sobre nuestro centro</h2>
+    <p>Somos un equipo de fisioterapeutas dedicados a ayudarte a mejorar tu calidad de vida. Combinamos tecnología, experiencia y un enfoque humano para brindarte tratamientos efectivos y personalizados. Nuestro objetivo es guiarte en cada etapa de tu recuperación.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios de Fisioterapia</h2>
+    <div class="servicios-grid">
+      <div class="servicio">
+        <h3>Rehabilitación post-operatoria</h3>
+        <p>Plan personalizado para recuperar fuerza y movilidad tras una cirugía.</p>
+      </div>
+      <div class="servicio">
+        <h3>Terapia manual</h3>
+        <p>Alivio del dolor muscular mediante técnicas especializadas.</p>
+      </div>
+      <div class="servicio">
+        <h3>Fisioterapia deportiva</h3>
+        <p>Prevención y tratamiento de lesiones deportivas para mejorar el rendimiento.</p>
+      </div>
+      <div class="servicio">
+        <h3>Tratamientos para dolor crónico</h3>
+        <p>Programas para aliviar condiciones persistentes como lumbalgias o cervicalgias.</p>
+      </div>
+    </div>
+    <div class="redes">
+      <a href="https://www.facebook.com/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+      <a href="https://bo.linkedin.com/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn">
+      </a>
+    </div>
+  </section>
+
+  <script>
+    const slider = document.getElementById('slider');
+    const totalSlides = slider.children.length;
+    let index = 0;
+
+    setInterval(() => {
+      index = (index + 1) % totalSlides;
+      slider.style.transform = `translateX(-${index * 100}vw)`;
+    }, 3000);
+  </script>
+
+</body>
+</html>
